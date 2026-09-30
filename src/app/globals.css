@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-forest: #3a5a40;
+  --color-forest-dark: #2c422f;
+  --color-sage: #a3b18a;
+  --color-cream: #fefae0;
+  --color-beige: #e9edc9;
+  --color-peach: #f4a261;
+  --color-gold: #e9c46a;
+  --color-charcoal: #1a1a1a;
+  --color-muted: #6b7280;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fbfaf4;
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: #a3b18a;
+  color: #1a1a1a;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #3a5a40;
+  outline-offset: 1px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.handwritten {
+  font-family: "Segoe Script", "Bradley Hand", "Comic Sans MS", cursive;
+}
